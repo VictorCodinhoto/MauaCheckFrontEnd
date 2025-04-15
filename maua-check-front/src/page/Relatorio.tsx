@@ -6,6 +6,7 @@ import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 
 
+
 export default function Relatorio(){
     const [historico, setHistorico] = useState<Veiculo[]>([]);
     interface Veiculo {
@@ -52,7 +53,10 @@ export default function Relatorio(){
               </tbody>
             </table>
           </div>
-          <Button onClick={exportarParaExcel}>Baixar em excel</Button>
+          <Button className="btn btn-success d-flex align-items-center gap-2" onClick={exportarParaExcel}>
+            Transferir
+            <img src={"https://cdn-icons-png.flaticon.com/512/732/732220.png"} alt="Excel" style={{ width: "20px", height: "20px" }} />
+            </Button>
         </div>
     );
 }
