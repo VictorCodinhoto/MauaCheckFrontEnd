@@ -16,7 +16,7 @@ export default function NavbarMauaCheck() {
       <Navbar.Collapse id="navbarScroll">
         <Nav className="me-auto my-2 my-lg-0" navbarScroll>
           <Nav.Link href="/">Página Principal</Nav.Link>
-          <Nav.Link href="/Relatorios">Relatórios</Nav.Link>
+          <Nav.Link href="/Relatorio">Relatórios</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
